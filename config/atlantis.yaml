@@ -1,0 +1,11 @@
+serviceAccount:
+  name: ${name}
+  annotations:
+    eks.amazonaws.com/role-arn: ${role}
+
+github:
+  user: ${name}
+  token: ${token}
+  secret: ${secret}
+
+orgAllowlist: github.com/${org}/*
