@@ -34,7 +34,7 @@ jobs:
 
     # Generates an execution plan for Terraform
     - name: Terraform Plan
-      run: terraform plan -input=false
+      run: terraform plan -input=false -var-file=terraform.tfvars
 
     # On push to "main", build or change infrastructure according to Terraform configuration files
     - name: Terraform Apply
